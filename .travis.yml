@@ -1,0 +1,8 @@
+sudo: required
+
+services:
+  - docker
+
+script:
+  - docker build -t bananafett/bibtex2pdf-docker .
+  - docker images
