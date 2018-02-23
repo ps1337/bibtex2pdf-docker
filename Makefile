@@ -7,7 +7,7 @@ DIR := $(shell echo $(shell cd "$(shell  dirname "${BASH_SOURCE[0]}" )" && pwd )
 UID_ := $(shell id -u)
 
 VERSION ?= latest
-IMAGE_NAME ?= bananafett/bibtex2pdf
+IMAGE_NAME ?= bananafett/bibtex2pdf-docker
 CONTAINER_NAME ?= bibtex2pdf
 
 # This will output the help for each task
