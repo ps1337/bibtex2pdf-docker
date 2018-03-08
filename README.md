@@ -1,6 +1,6 @@
 # OK WHY?
 
-[![Build Status](https://travis-ci.org/0xBANANA/bibtex2pdf-docker.png?branch=master)](https://travis-ci.org/0xBANANA/bibtex2pdf-docker)
+[![Build Status](https://travis-ci.org/ps1337/bibtex2pdf-docker.png?branch=master)](https://travis-ci.org/ps1337/bibtex2pdf-docker)
 
 This downloads all references in a bibtex file as pdf if shorthands are used. If it doesn't make sense to download a file as pdf (e.g. png) it will try to save it in the native format.
 
