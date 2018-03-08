@@ -4,5 +4,5 @@ services:
   - docker
 
 script:
-  - docker build -t bananafett/bibtex2pdf-docker .
+  - docker build -t ps1337/bibtex2pdf-docker .
   - docker images
