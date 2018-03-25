@@ -5,4 +5,4 @@ services:
 
 script:
   - make build
-  - make run
+  - make test
