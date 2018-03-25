@@ -11,7 +11,8 @@ RUN echo "deb [arch=amd64] https://dl.google.com/linux/chrome/deb/ stable main" 
 # Install chrome and bibtexparser
 RUN apt-get update
 RUN apt-get install -y google-chrome-stable python wget python-pip python-setuptools --no-install-recommends
-RUN pip install bibtexparser
+RUN pip install -U pip && \
+    pip install bibtexparser
 
 # Add chrome user
 RUN groupadd -r chrome && useradd -r -g chrome -G audio,video chrome \

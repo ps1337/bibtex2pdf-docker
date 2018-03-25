@@ -24,11 +24,11 @@ for key in bibtex_database.entries_dict:
     shorthand = ""
     try:
 
-        if "link" not in bibtex_database.entries_dict[key]:
+        if "url" not in bibtex_database.entries_dict[key]:
             print("[!] " + key + " is missing a link")
             continue
 
-        link = bibtex_database.entries_dict[key]['link']
+        link = bibtex_database.entries_dict[key]['url']
 
         if "shorthand" not in bibtex_database.entries_dict[key]:
             print("[!] " + key + " is missing a shorthand")
