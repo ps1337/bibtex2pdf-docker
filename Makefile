@@ -39,15 +39,6 @@ run: ## Run container
     $(IMAGE_NAME):$(VERSION) \
     bash -c "usermod -u $(UID_) chrome && su -c 'python /home/chrome/bibtex2pdf.py /tmp/bib.bibtex /home/chrome/bibtex-downloads' chrome"
 
-test: ## Do Tests
-	sudo docker run \
-    -it \
-    --rm \
-    --name=$(CONTAINER_NAME) \
-    -v $(DIR)/bib.bibtex:/tmp/bib.bibtex \
-    $(IMAGE_NAME):$(VERSION) \
-    bash -c "su -c 'python /home/chrome/bibtex2pdf.py /tmp/bib.bibtex /tmp' chrome"
-
 stop: ## Stop a running container
 	sudo docker stop $(CONTAINER_NAME)
 
