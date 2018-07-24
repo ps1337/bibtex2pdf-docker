@@ -1,4 +1,4 @@
-# OK WHY?
+# bibtex2pdf-docker
 
 [![Build Status](https://travis-ci.org/ps1337/bibtex2pdf-docker.png?branch=master)](https://travis-ci.org/ps1337/bibtex2pdf-docker)
 
@@ -10,5 +10,5 @@ Run `make build`. There's also an automated build at docker hub at `ps1337/bibte
 ## Running
 Use `make run` as non-root user and make sure the data folder can be accessed by your user. Be sure to provide the required file(s).
 
-## Why disable chrome sandboxing?!?! :(
+## Why did you disable chrome sandboxing
 Because some kernels still don't allow user namespaces.
